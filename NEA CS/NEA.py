@@ -44,7 +44,7 @@ from kivy.properties import ObjectProperty
 
 
 
-class Thing(App):
+class Thing(App):  #creative name!
     def build(self):
         self.window = GridLayout()
         self.window.cols = 1
@@ -53,7 +53,7 @@ class Thing(App):
 
         #return Label(text = 'Hello')
 
-        self.window.add_widget(Image(source='filler.jpeg'))
+        self.window.add_widget(Image(source='filler.jpeg')) #need to create logo// do this after exams unless u wanna fail
 
         self.intro = Label(
                      text="T H E    F E M A L E   N E T W O R K®",
@@ -90,6 +90,6 @@ class Thing(App):
         self.intro.text = "Hello " +self.user.text + ":D"
 
 if __name__ == '__main__':
-    Thing = Thing()
+    Thing = Thing() 
     Thing.run()
     quit()
